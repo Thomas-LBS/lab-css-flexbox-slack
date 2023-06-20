@@ -34,12 +34,29 @@ h1, h2, h3, h4, h5, h6 {
     color: #191817;
 }
 
+ul {
+    list-style: none;
+}
+
 p {
     font-size: 2.3em;
     text-align: left;
     color: #000000;
     padding: 45px 0 45px;
 }
+
+.signup-btn {
+    background-color: white;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 2em;
+    text-align: center;
+    height: 75px;
+    width: 100%;
+    color: #540B51;
+    cursor: pointer;
+    
+    }
 
 
 /* nav styles --------------------------------------------------- */
@@ -109,20 +126,9 @@ span.yellow {
     font-weight: bold;
 }
 
-.signup-btn {
-    border-radius: 10px;
-    margin: 10px 0;
-    font-size: 2em;
-    text-align: center;
-    height: 75px;
-    width: 100%;
-    color: #540B51;
-    cursor: pointer;
-    
-    }
-
 .signup-btn.mail {
     padding-left: 30px;
+    background-color: white;
   
 }    
 
@@ -192,7 +198,7 @@ main p.uppercase {
     float: right;
 }
 
-h2 {
+h2, h3{
     font-size: 4em;
     }
 
@@ -210,23 +216,143 @@ h2 {
 
 /* Team Slack styles --------------------------------------------------- */
 
+.teams-slack {
+    padding: 75px 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.teams-slack h3 {
+    margin: 45px 0 ;
+}
+
+.teams-slack p {
+   text-align: center;
+   font-size: 2em;
+   font-weight: bold;
+   padding: 0;
+}
+
+.teams-slack span {
+    color: #540B51;
+    font-size: 4em;
+    }
+
+.signup-btn.meet-slack {
+    margin-top: 45px;
+    color: white;
+    background-color: #540B51;
+}
+
+.signup-btn.talktosales {
+    border:#540B51 2px solid;
+    background-color: white;
+    margin-bottom: 45px;
+}
+
+#ul-numbers {
+    padding: 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ul-numbers li {
+    padding: 30px 0;
+}
+
 
 
 /* Welcome digital HQ styles --------------------------------------------------- */
+
+.welcome-hq {    
+    padding: 0 30px 60px;
+    text-align: center;
+   }
+
+.welcome-hq h3 {
+    color: white;
+    margin : 60px 0;
+}
+
+.signup-btn.talktosales2 {
+    color: white;
+    border: white 2px solid;
+    background-color:#540B51;
+}
+
+.signup-btn.tryforfree {
+    border: none;
+}
 
 
 
 /* Footer styles --------------------------------------------------- */
 
 footer {
+    padding: 30px 30px;
     background-color: white;
 }
+
+footer img {
+    width: 10%;
+}
+
+.div-ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 2px rgba(0, 0, 0, 0.1) solid ;
+}
+
+footer ul {
+    padding: 30px 0;
+   }
+
+footer ul li {
+    padding-bottom: 30px;
+    font-size: 1.5em;
+}
+
+li.bold {
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 45px;
+}
+
+ul.bold {
+    font-weight: bold;
+    font-size: 1em;
+    padding-bottom: 45px;
+}
+
+li.blue {
+    color: #4285F4;
+}
+
+img.ico {
+    width: 20px;
+    
+}
+
+.ul-socialsM {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+}
+
+small {
+    font-size: 1.5em;
+}
+
 
 
 
 /* Design Web Responsive styles --------------------------------------------------- */
 
-/* mobile screen */
+/* mobile screen ---------------------------------------------------*/
 
 @media (max-width: 768px) {
     ul.menu1, ul.menu2 {
@@ -235,19 +361,19 @@ footer {
 }
 
 
-/* small screen */
+/* small screen ---------------------------------------------------*/
 @media (min-width: 769px) and (max-width: 1024px) {
     
 }
 
 
-/* medium screen */
+/* medium screen ---------------------------------------------------*/
 @media (min-width: 1025px) and (max-width: 1440px) {
     
 }
 
 
-/*large screen */
+/*large screen bonus ---------------------------------------------------*/
 @media screen (max-width: 1441px) {
     
 }
