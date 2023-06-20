@@ -18,10 +18,10 @@
 
 <body>
   <nav>
-    <div>
-      <img src="./images/slack-logo.png" alt="Slack logo" />
+    <div id="left-corner">
+      <img id="slack-logo" src="./images/slack-logo.png" alt="Slack logo" />
 
-      <ul>
+      <ul class="menu1">
         <li>
           <a href="#">Product</a>
         </li>
@@ -37,16 +37,16 @@
       </ul>
     </div>
 
-    <div>
-      <button>
+    <div id="right-corner">
+      <button id="search-btn">
         <img src="./images/icon-search.png" alt="Search icon">
       </button>
 
-      <button>
+      <button id="burger-menu-btn">
         <img src="./images/icon-menu.png" alt="Menu icon">
       </button>
 
-      <ul hidden>
+      <ul class="menu2" >
         <li>
           <a href="#">Sign in</a>
         </li>
@@ -61,35 +61,36 @@
     <div>
       <h1>Great teamwork starts with a digital HQ</h1>
 
-      <p>Slack is free to try for as long as you'd like.</p>
+      <p><span class="yellow">Slack is free to try</span> for as long as you'd like</p>
 
       <div>
-        <button>Sign up with email</button>
+        <button class="signup-btn mail"><span class="uppercase">Sign up with email</span></button>
 
-        <button>
-          <img src="./images/logo-google.png" alt="Google logo" />
-          <span>Sign up with Google</span>
+        <button class="signup-btn google">
+          <img class="google-logo" src="./images/logo-google.png" alt="Google logo" />
+          <span class="uppercase">Sign up with Google</span>
+          <img/>
         </button>
       </div>
 
     </div>
 
     <div>
-      <img src="./images/hero-product-ui.png" alt="Slack app screenshot" />
+      <img class= "slack-presentation" src="./images/hero-product-ui.png" alt="Slack app screenshot" />
     </div>
   </header>
 
   <main>
     <section>
-      <p>Trusted by companies all over the world</p>
+      <p class="uppercase">Trusted by companies all over the world</p>
 
-      <div>
-        <img src="./images/logo-airbnb.png" alt="Airbnb logo" />
-        <img src="./images/logo-nasa.png" alt="NASA logo" />
-        <img src="./images/logo-uber.png" alt="Uber logo" />
-        <img src="./images/logo-target.png" alt="Target logo" />
-        <img src="./images/logo-nyt.png" alt="New York Times logo" />
-        <img src="./images/logo-spotify.png" alt="Spotify logo" />
+      <div class="div-trusted-logo">
+        <img class="trusted-logo" src="./images/logo-airbnb.png" alt="Airbnb logo" />
+        <img class="trusted-logo"src="./images/logo-nasa.png" alt="NASA logo" />
+        <img class="trusted-logo"src="./images/logo-uber.png" alt="Uber logo" />
+        <img class="trusted-logo"src="./images/logo-target.png" alt="Target logo" />
+        <img class="trusted-logo"src="./images/logo-nyt.png" alt="New York Times logo" />
+        <img class="trusted-logo"src="./images/logo-spotify.png" alt="Spotify logo" />
       </div>
 
     </section>

@@ -8,3 +8,173 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+
+/* initialising the style */
+*, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'awesome', sans-serif;
+    background-color: #540B51;
+}
+
+
+/* general class to use all over the page */
+
+.uppercase {
+    text-transform:uppercase;
+}
+
+
+/* nav styles --------------------------------------------------- */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#left-corner, #right-corner, .menu1, .menu2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#left-corner {
+    justify-content: flex-start;
+    padding: 30px 0 0 30px;
+}
+
+#right-corner {
+    justify-content: flex-end;
+    padding: 30px 30px 0 0;
+}
+
+#slack-logo {
+    height: 45px;
+    width: 100%;
+}
+
+#search-btn, #burger-menu-btn {
+    padding-left: 30px;
+    background-color: #540B51;
+     
+}
+
+nav > div > button > img {
+        height: 30px;
+        width:100%;
+}
+
+
+/* Header styles --------------------------------------------------- */
+
+header {
+    color: white;
+    padding: 75px 30px 0; 
+    text-align: center;
+}
+
+h1 {
+    padding: 0 30px;
+    font-size: 5em;
+}
+
+header p {
+    padding: 0 30px;
+    font-size: 2.2em;
+    padding: 30px 0; 
+}
+
+span.yellow {
+    color: #ECB12F;
+    font-weight: bold;
+}
+
+.signup-btn {
+    border-radius: 10px;
+    margin: 10px 0;
+    font-size: 2em;
+    text-align: center;
+    height: 75px;
+    width: 100%;
+    color: #540B51;
+}
+
+ .signup-btn.google {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4285F4;
+    color: white;
+    }
+
+ .google-logo {
+    margin: 10px;
+    width: 8%;
+    background-color: white;
+ }
+
+.slack-presentation {
+  padding-top: 30px;
+  width: 100%;
+  
+}
+
+
+/* Main styles --------------------------------------------------- */
+
+main {
+    background-color: #F3EAE2;
+}
+
+main p {
+    font-size: 1.8em;
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px; 
+}
+
+.div-trusted-logo {
+    display: flex;
+    flex-direction:row;
+}
+
+.trusted-logo {
+    display: flex;
+    flex-direction:row;
+    height: 100px;
+    
+}
+
+/* mobile screen */
+
+@media (max-width: 768px) {
+    ul.menu1, ul.menu2 {
+        display: none;
+        }
+}
+
+
+/* small screen */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+}
+
+
+/* medium screen */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    
+}
+
+
+/*large screen */
+@media screen (max-width: 1441px) {
+    
+}
