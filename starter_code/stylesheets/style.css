@@ -65,6 +65,7 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #left-corner, #right-corner, .menu1, .menu2{
@@ -75,12 +76,12 @@ nav {
 
 #left-corner {
     justify-content: flex-start;
-    padding: 30px 0 0 30px;
+    padding: 30px 30px;
 }
 
 #right-corner {
     justify-content: flex-end;
-    padding: 30px 30px 0 0;
+    padding: 30px 30px;
 }
 
 #slack-logo {
@@ -104,7 +105,7 @@ nav > div > button > img {
 
 header {
     color: white;
-    padding: 75px 30px 0; 
+    padding: 75px 0 0; 
     text-align: center;
 }
 
@@ -116,6 +117,7 @@ h1 {
 
 header p {
     color: white;
+    text-align: center;
     padding: 0 30px;
     font-size: 2.2em;
     padding: 30px 0; 
@@ -124,6 +126,10 @@ header p {
 span.yellow {
     color: #ECB12F;
     font-weight: bold;
+}
+
+.div-btn-center {
+    padding: 0 30px;
 }
 
 .signup-btn.mail {
@@ -142,13 +148,15 @@ span.yellow {
 
  .google-logo {
     margin: 10px;
-    width: 8%;
+    width: 8%;   
     background-color: white;
  }
 
 .slack-presentation {
-  padding-top: 30px;
-  width: 100%;
+  margin-top: 30px;
+  background-image: url(/starter_code/images/hero-product-ui.png);
+  background-size: 133%;
+  height: 500px;
 }
 
 
@@ -189,7 +197,7 @@ main p.uppercase {
 
 /* articles section styles --------------------------------------------------- */
 
-.img-article-section {
+.img-article-mobile {
     width: 95%;
     margin: 30px 0;
 }
@@ -312,7 +320,7 @@ footer ul {
    }
 
 footer ul li {
-    padding-bottom: 30px;
+    margin: 0 30px 30px;
     font-size: 1.5em;
 }
 
@@ -353,6 +361,8 @@ small {
 /* Design Web Responsive styles --------------------------------------------------- */
 
 /* mobile screen ---------------------------------------------------*/
+/* mobile screen ---------------------------------------------------*/
+/* mobile screen ---------------------------------------------------*/
 
 @media (max-width: 768px) {
     ul.menu1, ul.menu2 {
@@ -360,20 +370,250 @@ small {
         }
 }
 
+.img-article-section {
+    display: none;
+}
+
 
 /* small screen ---------------------------------------------------*/
+/* small screen ---------------------------------------------------*/
+/* small screen ---------------------------------------------------*/
+
 @media (min-width: 769px) and (max-width: 1024px) {
+    ul.menu1, ul.menu2 {
+        display: none;
+        }
+
+/* nav styles --------------------------------------------------- */
+
+    nav {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+
+/* Header styles --------------------------------------------------- */
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0; 
+    text-align: left;
+}
+
+header div.div-half.bb-background {
+    width: 65%;
+    padding: 60px 0;
+}
+
+header div.div-half.slack-presentation {
+    width: 35%;
+   
+}
+
+.bb-background {
+    background-image: url(/starter_code/images/background-singup.png);
+    background-size: 300%;
+    background-repeat: no-repeat;
+    }
+
+    
+    h1 {
+        font-size: 6.5em;
+        margin-right: 100px;
+    }
+    
+    header p {
+        text-align: left;
+        font-size: 2.5em;
+        padding: 30px 30px;
+         
+    }
+
+    .slack-presentation {
+        background-position: 25px 230px;
+        background-image: url(/starter_code/images/hero-product-ui.png);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        height: 800px;
+        }
+    
+    
+    
+/* Main styles --------------------------------------------------- */
+    
+
+main p.uppercase {
+    font-size: 1.5em;
+    }
+
+.div-trusted-logo {
+    display: flex;
+    justify-content: space-between;
+   }
+
+.trusted-logo {
+    height:50px;
+}
+
+
+/* articles section styles --------------------------------------------------- */
+
+.img-article-mobile {
+    display: none;
+}
+
+.img-article-section {
+    display: unset;
+    width: 85%;
+    margin: 30px 0;
+
+}
+
+
+h2, h3{
+    font-size: 2.5em;
+    }
+
+.article-text {
+    padding-left: 18%;
+    padding-right: 15%;
+}
+
+div.article-text p {
+    font-size: 1.7em;
+}
+
+
+.link-article{
+    font-size: 1.5em;
+    
+}
+
+
+/* Team Slack styles --------------------------------------------------- */
+
+.teams-slack > p {
+    font-size: 1.6em;
+    font-weight: 500;
+}
+
+.teams-flex-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-btn.meet-slack {
+    height: 65px;
+    width: 50%;
+    margin: 30px 15px 30px 0px;
+    padding: 0;
+    font-size: 1.6em;
+}
+
+.signup-btn.talktosales {
+    height: 65px;
+    width: 25%;
+    margin: 30px 0px 30px 15px;
+    padding: 0;
+    font-size: 1.6em;
+}
+
+
+
+.teams-slack span {
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: left;
+    }
+
+#ul-numbers {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+}
+
+#ul-numbers p {
+    font-size: 1.1em;
+    text-align: left;
+    padding : 0 30px;
+
+}
+
+#ul-numbers li {
+    padding: 30px 0;
+    width: 25%;
+}
+
+
+
+/* Welcome digital HQ styles --------------------------------------------------- */
+
+.welcome-hq {
+    display: flex;
+    flex-direction: column;
+    }
+
+button.talktosales2 {
+    order: +1;
+} 
+
+
+
+/* Footer styles --------------------------------------------------- */
+
+.status-cookie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px ;
+}
+
+.status-cookie li {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+img.ico {
+    width: 14px;
+    
+}
+
+.ul-socialsM {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2em;
+    width: 40%;
+}
+
+
+
+
+small {
+    font-size: 1.2em;
+}
     
 }
 
 
 /* medium screen ---------------------------------------------------*/
+/* medium screen ---------------------------------------------------*/
+/* medium screen ---------------------------------------------------*/
+
 @media (min-width: 1025px) and (max-width: 1440px) {
     
 }
 
 
 /*large screen bonus ---------------------------------------------------*/
+/*large screen bonus ---------------------------------------------------*/
+/*large screen bonus ---------------------------------------------------*/
+
 @media screen (max-width: 1441px) {
     
 }
